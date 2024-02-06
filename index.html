@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style>
+        
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            body,html {
+                /* Avoid any overflow restrictions */
+                overflow-x:visible;
+                margin:0px;
+                padding:0px;
+            }
+            .navbar{
+                display:flex;
+                justify-content:space-between;
+                padding-top:20px;
+                padding-bottom:15px;
+                padding-right:0px;
+            }
+            .left_navbar{
+                display:flex; 
+                padding-top: 0px; 
+                padding-left:10px;
+            }
+            .salesforcelogo{
+                padding-top:5px;
+                width : 40px;
+                margin-left:5px;
+            }
+            .log_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#hamburger-blue); 
+                background-size: cover; 
+                width: 10px; 
+                height: 10px;
+                border:none;
+                background-color: rgb(255, 255, 255);
+                padding-right:0px;
+                margin-right:10px;
+                margin-left:10px;
+                margin-top:10px;
+            }
+            .left_content_navbar{
+
+                display:none;
+                padding-top:15px;
+                padding-left:5px;
+                padding-right:5px;
+                color:#032D60;
+                font-family: Arial, Helvetica, sans-serif; font-weight:bold;
+                font-size:8px;
+            }
+            .left_content_padding{
+                padding-left:5px; 
+                padding-right:5px;
+            }
+            .right_navbar{
+                display:flex; 
+                justify-content: space-between; 
+                padding-top:0px; 
+                padding-right:10px; 
+                margin-right:0px
+            }
+            .contact_information{
+                padding-top:12px;
+                margin-right:8px;
+                text-align: center;
+                font-size:8px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .search_button_div{
+                padding-top:15px;
+                display:flex;
+                color:#032D60;
+                margin-right:0px;
+            }
+            .search_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#search-blue); 
+                background-size: cover; 
+                width: 10px; 
+                height: 10px;
+                border:none;
+                background-color: rgb(255, 255, 255);
+                padding-right:0px;
+                margin-right:10px;
+                margin-left:10px;
+            }
+            .web_button_div{
+                padding-top:15px;
+                display : none;
+                display:flex;
+                color:#032D60;
+                margin-right:0px;
+            }
+            .web_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#globe-blue);
+                display : none;
+                background-size:cover;
+                width:10px;
+                height:10px;
+                border:none;
+                background-color:rgb(255, 255, 255);
+                padding-left:0px;
+                margin-right:5px
+            }
+            .login_button_div{
+                padding-top:9px;
+                display:flex;
+                color:#032D60;
+                margin-right:10px
+            }
+            .login_user_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#user-blue);
+                background-size:cover;
+                width:10px;
+                height:10px;
+                border:none;
+                background-color:rgb(255, 255, 255);
+                padding-left:0px;
+                margin-right:0px;
+            }
+            .login_text{
+                display : none;
+                padding-left:2px;
+                padding-top:10px;
+                font-weight: bold;
+                font-size:8px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .tryforfree_button{
+                margin-top:10px;
+                background-color:#2E844A;
+                color: rgb(255, 255, 255);
+                border: none;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                font-size: 8px;
+                border-radius: 4px;
+                padding-top:8px;
+                padding-bottom:8px;
+                padding-left:12px;
+                padding-right:12px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                margin-right:0px
+                
+            }
+            .below_navbar{
+                display:flex;
+                justify-content: center;
+                background-color: #032D60;
+                padding-top:10px;
+                padding-bottom:10px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-right:0px;
+                margin-right:0px;
+                width:100%;
+            }
+            .df-picture{
+                padding-right:10px;
+            }
+            .dreamforce_text{
+                padding-top:4px;
+                padding-left:10px;
+                padding-right:10px; 
+                color: rgb(255, 255, 255);
+                font-weight:bolder;
+                font-size:12px;
+            }
+            .watchondemand_text{
+                padding-top:4px;
+                padding-left:10px;
+                padding-right:10px;
+                font-weight:bolder;
+                font-size:12px;
+            }
+            .main_content{
+                display:flex;
+                justify-content:space-between;
+                padding-top: 20px;
+                background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(234, 245, 254) 100%);
+            }
+            .main_content_padding{
+                padding-top:20px;
+                padding-left:50px
+            }
+            .wehelpgrowing_text{
+                margin-right:0px;
+                padding-right:0px;
+                font-size:30px;
+                color:#032D60;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight:bolder
+            }
+            .largecenter_text{
+                padding-right:0px;
+                color: #181818;
+                font-size:15px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+            .buttons_maincontent{
+                display:flex;
+            }
+            .discovermore_button{
+                padding-left:24px;
+                padding-right:24px;
+                padding-top:10px;
+                padding-bottom:10px;
+                background-color: #0176D3;
+                color: rgb(255, 255, 255);
+                border:none;
+                text-align:center;
+                border-radius:4px;
+                font-size:10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                margin-right:15px
+            }
+            .watchdemo_button{
+                padding-left:24px;
+                padding-right:24px;
+                padding-top:10px;
+                padding-bottom:10px;
+                background-color: rgb(255, 255, 255);
+                color: #0176D3;
+                font-family: Arial, Helvetica, sans-serif;
+                border-color: #0176D3;
+                border-radius:4px;
+                font-weight: bold;
+                text-align: center;
+                margin-left:10px;
+                font-size:10px;
+            }
+            .landingpage_picture{
+                padding-left:0px;
+                padding-top:0px;
+                width: 200px;
+                margin-left:0px;
+                margin-right:50px;
+                padding-right:100px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            body,html {
+                /* Avoid any overflow restrictions */
+                overflow-x:visible;
+                margin:0px;
+                padding:0px;
+            }
+            .navbar{
+                display:flex;
+                justify-content:space-between;
+                padding-top:20px;
+                padding-bottom:15px;
+                padding-right:0px;
+            }
+            .left_navbar{
+                display:flex; 
+                padding-top: 0px; 
+                padding-left:10px;
+            }
+            .salesforcelogo{
+                width : 60px;
+            }
+            .left_content_navbar{
+                display:flex;
+                padding-top:15px;
+                padding-left:5px;
+                padding-right:5px;
+                color:#032D60;
+                font-family: Arial, Helvetica, sans-serif; font-weight:bold;
+                font-size:8px;
+            }
+            .left_content_padding{
+                padding-left:5px; 
+                padding-right:5px;
+            }
+            .right_navbar{
+                display:flex; 
+                justify-content: space-between; 
+                padding-top:0px; 
+                padding-right:10px; 
+                margin-right:0px
+            }
+            .contact_information{
+                padding-top:5px;
+                margin-right:10px;
+                text-align: center;
+                font-size:8px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .search_button_div{
+                padding-top:15px;
+                display:flex;
+                color:#032D60;
+                margin-right:0px;
+            }
+            .search_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#search-blue); 
+                background-size: cover; 
+                width: 10px; 
+                height: 10px;
+                border:none;
+                background-color: rgb(255, 255, 255);
+                padding-right:0px;
+                margin-right:5px;
+                margin-left:10px;
+            }
+            .web_button_div{
+                padding-top:15px;
+                display:flex;
+                color:#032D60;
+                margin-right:0px;
+            }
+            .web_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#globe-blue);
+                background-size:cover;
+                width:10px;
+                height:10px;
+                border:none;
+                background-color:rgb(255, 255, 255);
+                padding-left:0px;
+                margin-right:5px
+            }
+            .login_button_div{
+                padding-top:9px;
+                display:flex;
+                color:#032D60;
+                margin-right:20px
+            }
+            .login_user_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#user-blue);
+                background-size:cover;
+                width:10px;
+                height:10px;
+                border:none;
+                background-color:rgb(255, 255, 255);
+                padding-left:0px;
+                margin-right:0px;
+            }
+            .login_text{
+                padding-left:2px;
+                padding-top:5px;
+                font-weight: bold;
+                font-size:8px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .tryforfree_button{
+                margin-top:10px;
+                background-color:#2E844A;
+                color: rgb(255, 255, 255);
+                border: none;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                font-size: 8px;
+                border-radius: 4px;
+                padding-top:8px;
+                padding-bottom:8px;
+                padding-left:12px;
+                padding-right:12px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                margin-right:0px
+                
+            }
+            .below_navbar{
+                display:flex;
+                justify-content: center;
+                background-color: #032D60;
+                padding-top:10px;
+                padding-bottom:10px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-right:0px;
+                margin-right:0px;
+                width:100%;
+            }
+            .df-picture{
+                padding-right:10px;
+            }
+            .dreamforce_text{
+                padding-top:4px;
+                padding-left:10px;
+                padding-right:10px; 
+                color: rgb(255, 255, 255);
+                font-weight:bolder;
+                font-size:12px;
+            }
+            .watchondemand_text{
+                padding-top:4px;
+                padding-left:10px;
+                padding-right:10px;
+                font-weight:bolder;
+                font-size:12px;
+            }
+            .main_content{
+                display:flex;
+                justify-content:space-between;
+                padding-top: 20px;
+                background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(234, 245, 254) 100%);
+            }
+            .main_content_padding{
+                padding-top:20px;
+                padding-left:50px
+            }
+            .wehelpgrowing_text{
+                margin-right: 0px;
+                padding-right:0px;
+                font-size:30px;
+                color:#032D60;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight:bolder
+            }
+            .largecenter_text{
+                padding-right:0px;
+                color: #181818;
+                font-size:15px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+            .buttons_maincontent{
+                display:flex;
+            }
+            .discovermore_button{
+                padding-left:24px;
+                padding-right:24px;
+                padding-top:10px;
+                padding-bottom:10px;
+                background-color: #0176D3;
+                color: rgb(255, 255, 255);
+                border:none;
+                text-align:center;
+                border-radius:4px;
+                font-size:10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                margin-right:15px
+            }
+            .watchdemo_button{
+                padding-left:24px;
+                padding-right:24px;
+                padding-top:10px;
+                padding-bottom:10px;
+                background-color: rgb(255, 255, 255);
+                color: #0176D3;
+                font-family: Arial, Helvetica, sans-serif;
+                border-color: #0176D3;
+                border-radius:4px;
+                font-weight: bold;
+                text-align: center;
+                margin-left:10px;
+                font-size:10px;
+            }
+            .landingpage_picture{
+                padding-top:30px;
+                width:350px;
+                margin-right:50px;
+                padding-right:100px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            body,html {
+                overflow-x: hidden; /* Avoid any overflow restrictions */
+                margin:0px;
+                padding:0px;
+            }
+            .log_button{
+                display:none;
+            }
+            .navbar{
+                display:flex;
+                justify-content:space-between;
+                padding-top:20px;
+                padding-bottom:15px;
+                padding-right:0px;
+            }
+            .left_navbar{
+                display:flex; 
+                padding-top: 0px; 
+                padding-left:10px;
+            }
+            .left_content_navbar{
+                display:flex;
+                padding-top:15px;
+                padding-left:5px;
+                padding-right:5px;
+                color:#032D60;
+                font-family: Arial, Helvetica, sans-serif; font-weight:bold;
+                font-size:12px;
+            }
+            .left_content_padding{
+                padding-left:5px; 
+                padding-right:5px;
+            }
+            .right_navbar{
+                display:flex; 
+                justify-content: space-between; 
+                padding-top:0px; 
+                padding-right:10px; 
+                margin-right:0px
+            }
+            .contact_information{
+                margin-right:10px;
+                text-align: center;
+                font-size:10px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .search_button_div{
+                padding-top:10px;
+            }
+            .search_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#search-blue); 
+                background-size: cover; 
+                width: 20px; 
+                height: 20px;
+                border:none;
+                background-color: rgb(255, 255, 255);
+                padding-right:0px;
+                margin-right:20px;
+                margin-left:10px;
+            }
+            .web_button_div{
+                padding-top:10px
+            }
+            .web_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#globe-blue);
+                background-size:cover;
+                width:20px;
+                height:20px;
+                border:none;
+                background-color:rgb(255, 255, 255);
+                padding-left:0px;
+                margin-right:20px
+            }
+            .login_button_div{
+                padding-top:10px;
+                display:flex;
+                color:#032D60;
+                margin-right:20px
+            }
+            .login_user_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#user-blue);
+                background-size:cover;
+                width:20px;
+                height:20px;
+                border:none;
+                background-color:rgb(255, 255, 255);
+                padding-left:0px;
+                margin-right:0px;
+            }
+            .login_text{
+                padding-top:0px;
+                font-weight: bold;
+                font-size:16px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .tryforfree_button{
+                background-color:#2E844A;
+                color: rgb(255, 255, 255);
+                border: none;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                font-size: 12px;
+                border-radius: 4px;
+                padding-top:8px;
+                padding-bottom:8px;
+                padding-left:12px;
+                padding-right:12px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                margin-right:0px
+            }
+            .below_navbar{
+                display:flex;
+                justify-content: center;
+                background-color: #032D60;
+                padding-top:15px;
+                padding-bottom:15px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-right:0px;
+                margin-right:0px;
+                width:100%;
+            }
+            .df-picture{
+                padding-right:10px;
+            }
+            .dreamforce_text{
+                padding-top:4px;
+                padding-left:10px;
+                padding-right:10px; 
+                color: rgb(255, 255, 255);
+                font-weight:bolder;
+                font-size:12px;
+            }
+            .watchondemand_text{
+                padding-top:4px;
+                padding-left:10px;
+                padding-right:10px;
+                font-weight:bolder;
+                font-size:12px;
+            }
+            .main_content{
+                display:flex;
+                justify-content:space-between;
+                padding-top: 20px;
+                background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(234, 245, 254) 100%);
+            }
+            .main_content_padding{
+                padding-top:20px;
+                padding-left:100px
+            }
+            .wehelpgrowing_text{
+                margin-right: 0px;
+                padding-right:0px;
+                font-size:30px;
+                color:#032D60;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight:bolder
+            }
+            .largecenter_text{
+                padding-right:0px;
+                color: #181818;
+                font-size:20px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+            .buttons_maincontent{
+                display:flex;
+            }
+            .discovermore_button{
+                padding-left:32px;
+                padding-right:32px;
+                padding-top:18px;
+                padding-bottom:18px;
+                background-color: #0176D3;
+                color: rgb(255, 255, 255);
+                border:none;
+                text-align:center;
+                border-radius:4px;
+                font-size:16px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                margin-right:15px
+            }
+            .watchdemo_button{
+                padding-left:32px;
+                padding-right:32px;
+                padding-top:12px;
+                padding-bottom:12px;
+                background-color: rgb(255, 255, 255);
+                color: #0176D3;
+                font-family: Arial, Helvetica, sans-serif;
+                border-color: #0176D3;
+                border-radius:4px;
+                font-weight: bold;
+                text-align: center;
+                margin-left:10px;
+                font-size:15px;
+            }
+            .landingpage_picture{
+                padding-top:30px;
+                width:400px;
+                margin-right:50px;
+                padding-right:100px;
+            } 
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            body,html {
+                overflow-x: hidden; /* Avoid any overflow restrictions */
+                margin:0px;
+                padding:0px;
+            }
+            .log_button{
+                display:none;
+            }
+            .navbar{
+                display:flex;
+                justify-content:space-between;
+                padding-top:20px;
+                padding-bottom:15px;
+                padding-right:0px;
+            }
+            .left_navbar{
+                display:flex; 
+                padding-top: 0px; 
+                padding-left:10px;
+            }
+            .salesforcelogo{
+                width : 80px;
+            }
+            .left_content_navbar{
+                display:flex;
+                padding-top:15px;
+                padding-left:5px;
+                padding-right:5px;
+                color:#032D60;
+                font-family: Arial, Helvetica, sans-serif; font-weight:bold;
+                font-size:12px;
+            }
+            .left_content_padding{
+                padding-left:5px; 
+                padding-right:5px;
+            }
+            .right_navbar{
+                display:flex; 
+                justify-content: space-between; 
+                padding-top:0px; 
+                padding-right:10px; 
+                margin-right:0px
+            }
+            .contact_information{
+                margin-right:10px;
+                text-align: center;
+                font-size:12px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .search_button_div{
+                padding-top:10px;
+            }
+            .search_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#search-blue); 
+                background-size: cover; 
+                width: 20px; 
+                height: 20px;
+                border:none;
+                background-color: rgb(255, 255, 255);
+                padding-right:0px;
+                margin-right:20px;
+                margin-left:10px;
+            }
+            .web_button_div{
+                padding-top:10px
+            }
+            .web_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#globe-blue);
+                background-size:cover;
+                width:20px;
+                height:20px;
+                border:none;
+                background-color:rgb(255, 255, 255);
+                padding-left:0px;
+                margin-right:20px
+            }
+            .login_button_div{
+                padding-top:10px;
+                display:flex;
+                color:#032D60;
+                margin-right:20px
+            }
+            .login_user_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#user-blue);
+                background-size:cover;
+                width:20px;
+                height:20px;
+                border:none;
+                background-color:rgb(255, 255, 255);
+                padding-left:0px;
+                margin-right:0px;
+            }
+            .login_text{
+                font-weight: bold;
+                font-size:16px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .tryforfree_button{
+                background-color:#2E844A;
+                color: rgb(255, 255, 255);
+                border: none;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                font-size: 12px;
+                border-radius: 4px;
+                padding-top:8px;
+                padding-bottom:8px;
+                padding-left:12px;
+                padding-right:12px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                margin-right:0px
+            }
+            .below_navbar{
+                display:flex;
+                justify-content: center;
+                background-color: #032D60;
+                padding-top:15px;
+                padding-bottom:15px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-right:0px;
+                margin-right:0px;
+                width:100%;
+            }
+            .df-picture{
+                padding-right:10px;
+            }
+            .dreamforce_text{
+                padding-top:4px;
+                padding-left:10px;
+                padding-right:10px; 
+                color: rgb(255, 255, 255);
+                font-weight:bolder;
+                font-size:12px;
+            }
+            .watchondemand_text{
+                padding-top:4px;
+                padding-left:10px;
+                padding-right:10px;
+                font-weight:bolder;
+                font-size:12px;
+            }
+            .main_content{
+                display:flex;
+                justify-content:space-between;
+                padding-top: 40px;
+                background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(234, 245, 254) 100%);
+            }
+            .main_content_padding{
+                padding-top:100px;
+                padding-left:100px
+            }
+            .wehelpgrowing_text{
+                margin-right: 100px;
+                font-size:40px;
+                color:#032D60;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight:bolder
+            }
+            .largecenter_text{
+                padding-right:140px;
+                color: #181818;
+                font-size:20px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+            .buttons_maincontent{
+                display:flex;
+            }
+            .discovermore_button{
+                padding-left:32px;
+                padding-right:32px;
+                padding-top:18px;
+                padding-bottom:18px;
+                background-color: #0176D3;
+                color: rgb(255, 255, 255);
+                border:none;
+                text-align:center;
+                border-radius:4px;
+                font-size:16px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                margin-right:15px
+            }
+            .watchdemo_button{
+                padding-left:32px;
+                padding-right:32px;
+                padding-top:12px;
+                padding-bottom:12px;
+                background-color: rgb(255, 255, 255);
+                color: #0176D3;
+                font-family: Arial, Helvetica, sans-serif;
+                border-color: #0176D3;
+                border-radius:4px;
+                font-weight: bold;
+                text-align: center;
+                margin-left:10px;
+                font-size:15px;
+            }
+            .landingpage_picture{
+                width:520px;
+                margin-right:50px;
+                padding-right:100px;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .navbar{
+                display:flex;
+                justify-content:space-between;
+                padding-top:20px;
+                padding-bottom:15px;
+            }
+            .log_button{
+                display:none;
+            }
+            .left_navbar{
+                display:flex; 
+                padding-top: 0px; 
+                padding-left:30px;
+            }
+            .salesforcelogo{
+                width : 80px;
+            }
+            .left_content_navbar{
+                display:flex;
+                padding-top:15px;
+                padding-left:10px;
+                padding-right:10px;
+                color:#032D60;
+                font-family: Arial, Helvetica, sans-serif; font-weight:bold;
+                font-size:16px;
+            }
+            .left_content_padding{
+                padding-left:15px; 
+                padding-right:15px;
+            }
+            .right_navbar{
+                display:flex; 
+                justify-content: space-between; 
+                padding-top:0px; 
+                ;padding-right:10px; 
+                margin-right:40px
+            }
+            .contact_information{
+                margin-right:30px;
+                text-align: center;
+                font-size:14px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .search_button_div{
+                padding-top:10px;
+            }
+            .search_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#search-blue); 
+                background-size: cover; 
+                width: 20px; 
+                height: 20px;
+                border:none;
+                background-color: rgb(255, 255, 255);
+                padding-right:0px;
+                margin-right:20px;
+                margin-left:10px;
+            }
+            .web_button_div{
+                padding-top:10px
+            }
+            .web_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#globe-blue);
+                background-size:cover;
+                width:20px;
+                height:20px;
+                border:none;
+                background-color:rgb(255, 255, 255);
+                padding-left:0px;
+                margin-right:20px
+            }
+            .login_button_div{
+                padding-top:10px;
+                display:flex;
+                color:#032D60;
+                margin-right:20px
+            }
+            .login_user_button{
+                background-image: url(https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#user-blue);
+                background-size:cover;
+                width:20px;
+                height:20px;
+                border:none;
+                background-color:rgb(255, 255, 255);
+                padding-left:0px;
+                margin-right:0px;
+            }
+            .login_text{
+                font-weight: bold;
+                font-size:16px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .tryforfree_button{
+                background-color:#2E844A;
+                color: rgb(255, 255, 255);
+                border: none;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                border-radius: 4px;
+                padding-top:8px;
+                padding-bottom:8px;
+                padding-left:24px;
+                padding-right:24px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                margin-right:10px
+            }
+            .below_navbar{
+                display:flex;
+                justify-content: center;
+                background-color: #032D60;
+                padding-top:15px;
+                padding-bottom:15px;
+                font-family: Arial, Helvetica, sans-serif
+            }
+            .df-picture{
+                padding-right:10px;
+            }
+            .dreamforce_text{
+                padding-top:4px;
+                padding-left:10px;
+                padding-right:10px; 
+                color: rgb(255, 255, 255);
+                font-weight:bolder
+
+            }
+            .watchondemand_text{
+                padding-top:4px;
+                padding-left:10px;
+                padding-right:10px;
+                font-weight:bolder;
+                font-size:15px;
+            }
+            .main_content{
+                display:flex;
+                justify-content:space-between;
+                padding-top: 60px;
+                background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(234, 245, 254) 100%);
+            }
+            .main_content_padding{
+                padding-top:100px;
+                padding-left:100px
+            }
+            .wehelpgrowing_text{
+                margin-right: 100px;
+                font-size:56px;
+                color:#032D60;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight:bolder
+            }
+            .largecenter_text{
+                padding-right:140px;
+                color: #181818;
+                font-size:20px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+            .buttons_maincontent{
+                display:flex;
+            }
+            .discovermore_button{
+                padding-left:32px;
+                padding-right:32px;
+                padding-top:18px;
+                padding-bottom:18px;
+                background-color: #0176D3;
+                color: rgb(255, 255, 255);
+                border:none;
+                text-align:center;
+                border-radius:4px;
+                font-size:16px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                margin-right:15px
+            }
+            .watchdemo_button{
+                padding-left:32px;
+                padding-right:32px;
+                padding-top:12px;
+                padding-bottom:12px;
+                background-color: rgb(255, 255, 255);
+                color: #0176D3;
+                font-family: Arial, Helvetica, sans-serif;
+                border-color: #0176D3;
+                border-radius:4px;
+                font-weight: bold;
+                text-align: center;
+                margin-left:10px;
+                font-size:15px;
+            }
+            .landingpage_picture{
+                width:520px;
+                margin-right:50px;
+                padding-right:100px;
+            }
+        }
+    </style>
+</head>
+
+<body style = "margin:0px;">
+    <div class = "navbar">
+        <div class = "left_navbar">
+            <div class = "log">
+                <button class = "log_button"></button>
+            </div>
+            <div>
+                <img src="logo-salesforce.svg" alt="logo_website" class = "salesforcelogo">
+            </div>
+            <div class = "left_content_navbar">
+                <div class = "left_content_padding">
+                    Products
+                </div>
+                <div class = "left_content_padding">
+                    Industries
+                </div>
+                <div  class = "left_content_padding">
+                    Customers
+                </div>
+                <div class = "left_content_padding">
+                    Learning
+                </div>
+                <div class = "left_content_padding">
+                    Support
+                </div>
+                <div class = "left_content_padding">
+                    Company
+                </div>
+                <div class = "left_content_padding">
+                    Salesforce+
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class = "right_navbar">
+            <div  class = "contact_information">
+                <div>
+                    <a href="https://www.salesforce.com/in/company/contact-us/?d=cta-header-9" target="blank" style = "color: inherit">Contact us</a>
+                </div>
+                <!-- <div>1800-242-7332</div> -->
+            </div>
+            <div class = "search_button_div" >
+                <button class = "search_button"></button>
+            </div>
+            <div class = "web_button_div">
+                <button class = "web_button"></button>
+            </div>
+            <div class = "login_button_div">
+                <div>
+                    <button class = "login_user_button"></button>
+                </div>
+                <div class = "login_text">
+                    Login
+                </div>
+               
+            </div>
+            <div>
+                <button class = "tryforfree_button">
+                Try for free</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <h2 class="pbc-g-text-display-8 notification-desktop-mb-revert mobile-pb-4 tablet-pb-4 mobile-mt-0 tablet-mt-0 mobile-pt-8 tablet-pt-8" style="color: rgb(255, 255, 255)">
+        
+        Dreamforce: The Asia Pacific Edition
+        
+    </h2> -->
+    
+    <div class="below_navbar">
+        <div class = "df-picture">
+            <img src="df-white.webp" alt="nav_1_logo" width="80px" >
+        </div>
+        <div class = "dreamforce_text">
+            Dreamforce: The Asia Pacific Edition
+        </div>
+        <div class = "watchondemand_text">
+            <a href="https://www.salesforce.com/plus/experience/Dreamforce_2023/series/global_highlights_at_dreamforce_2023/episode/episode-s1e7" target = "_blank" style="color : rgb(255, 255, 255)">Watch on demand</a>
+        </div>
+    </div>
+    
+    <div class = "main_content" >
+        <div class = "main_content_padding">
+            <div class = "wehelpgrowing_text">
+                We help growing
+                businesses grow. 
+            </div>
+            <br>
+            <div class = "largecenter_text">
+                <p>
+                    Easy to use, simple to set up, Salesforce's all-in-one CRM platform is taking businesses in India to the next level. See how we can help foster more love, trust, and loyalty for you and your customers.
+                </p>
+            </div>
+            <br>
+            <div class = "buttons_maincontent">
+                <button class = "discovermore_button">
+                    Discover more
+                </button>
+                <button class = "watchdemo_button">
+                    Watch demo
+                </button>
+            </div>
+        </div>
+        <div >
+            <img src="landing_page_photo.webp" alt="landing_photo" class = "landingpage_picture">
+        </div>
+    </div>
+</body>
+
+
+</html>
+
